@@ -1,0 +1,43 @@
+{
+  "name": "caredac-backend",
+  "version": "1.0.0",
+  "description": "Javascript, Express, MySQL",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon server.js",
+    "start": "nodemon server.js",
+    "start:dev": "env-cmd -f .env.development nodemon server.js",
+    "start:staging": "env-cmd -f .env.staging nodemon server.js",
+    "start:production": "env-cmd -f .env.production nodemon server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^3.0.2"
+  },
+  "dependencies": {
+    "aws-sdk": "^2.1528.0",
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.20.2",
+    "cors": "^2.8.5",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "express-session": "^1.18.0",
+    "joi": "^17.11.0",
+    "jsonwebtoken": "^9.0.2",
+    "lodash": "^4.17.21",
+    "moment": "^2.30.1",
+    "morgan": "^1.10.0",
+    "multer": "^1.4.5-lts.1",
+    "mysql2": "^3.6.5",
+    "nodemailer": "^6.9.8",
+    "redis": "^4.6.12",
+    "sequelize": "^6.35.2",
+    "stripe": "^14.15.0",
+    "swagger-autogen": "^2.23.7",
+    "swagger-ui-express": "^5.0.0",
+    "uuid": "^9.0.1"
+  }
+}
